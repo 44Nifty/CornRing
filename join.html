@@ -1,0 +1,34 @@
+---
+title: How to Join
+layout: html
+---
+<h1>How to Join CornRing</h1>
+<h2>Criteria to join</h2>
+<ul>
+<li>Your site must not have any unmarked NSFW content on it.
+<li>Hate speech will not be tolerated, and I will not hesitate to remove you from the webring.
+<li>Your site must not have paid advertisement. Advertisement such as <a href="https://googol.neocities.org/neolink/">Neolink</a> and <a href="https://wsmz.gay/other/bannerlink/">Bannerlink</a> are permitted, and even encouraged.
+<li>If you disclose your state, you must live in the Midwest.</li>
+</ul>
+
+<small>It is impossible to enumerate everything that is not allowed. For this reason, we (the webmasters) reserve the right to remove a site if we feel it is outside of our own personal bounds.</small>
+
+<h2>Add yourself to the members list</h2>
+
+<form name=signup method=POST data-netlify=true netlify-honeypot=bot>
+<div hidden><label>Leave this blank unless you're spam <input name=bot></label></div>
+  <label>Slug <input name=slug pattern=[0-9a-z](?:-?[0-9a-z])* required></label>
+(ASCII lowercase letters, digits, and hyphen-minuses)<br>
+<label>Name <textarea name=name></textarea></label><br>
+<label>URL <input name=url type=url></label><br>
+<label>State <input name=state>Optional</label><br>
+<label>E-mail address <input type=email name=email>thisis@optional.com</label> 
+<label>Additional Comments <input name=comments>This is optional</label>
+<input type=submit>
+</form>
+If you're editing your existing entry, make sure to use the same slug. If you're deleting your existing entry, leave the URL field blank.
+
+<h2>Add links on your webpage</h2>
+<p>Once you're on the members list, add links on your webpage to <b>{{'/YOUR-SLUG/next'|absolute_url}}</b> and <b>{{'/YOUR-SLUG/previous'|absolute_url}}</b>, replacing <b>YOUR-SLUG</b> with the slug you chose.<br>
+Feel free to include a link to <b>{{'/'|absolute_url}}</b> as well.<br>
+Check if <a href=https://html.spec.whatwg.org/dev/sections.html#the-aside-element>the <code>&lt;aside&gt;</code> element</a> is right for you.
