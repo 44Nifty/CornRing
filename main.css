@@ -1,5 +1,5 @@
 body {
-  background-color: #222;
+  background-image: url(plaid.png);
   color: white;
   font-family: Arial;
   text-align: center;
@@ -7,4 +7,8 @@ body {
 ul, ol {
   width: 40vw;
   margin: 0 auto;
+}
+.main {
+  background-color: black;
+  width: 50%;
 }
